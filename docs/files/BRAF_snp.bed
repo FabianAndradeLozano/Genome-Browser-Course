@@ -1,0 +1,4 @@
+track name="BRAF Variants" description="Custom track for BRAF gene variants" visibility=3 color=0,0,255
+chr7    140453136    140453137    V600E    0    +
+chr7    140449150    140449151    G643G    0    +
+chr7    140500228    140500229    A305V    0    +

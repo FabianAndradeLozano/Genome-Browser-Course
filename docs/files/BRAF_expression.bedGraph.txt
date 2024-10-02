@@ -1,0 +1,5 @@
+track type=bedGraph name="BRAF Expression" description="Expression levels across BRAF gene" visibility=full color=0,0,255
+chr7    140424943   140425943   50
+chr7    140425943   140426943   75
+chr7    140426943   140427943   100
+chr7    140427943   140428943   25
