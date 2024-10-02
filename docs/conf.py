@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'NGS-QC-Course'
+project = u'Genome-Browser-Course'
 
 # -- General configuration ---------------------------------------------------
 
@@ -62,6 +62,6 @@ html_theme = 'sphinx_rtd_theme'
 
 # The URL which points to the root of the HTML documentation.
 # It is used to indicate the location of document like canonical_url
-html_baseurl = 'https://fabianandradelozano.github.io/NGS-QC-Course/'
+html_baseurl = 'https://fabianandradelozano.github.io/Genome-Browser-Course/'
 
 # html_logo = html_favicon = '_images/sphinx-notes.png'
