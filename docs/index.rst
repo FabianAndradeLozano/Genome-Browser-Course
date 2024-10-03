@@ -5,7 +5,7 @@ Genome Browers (UCSC and Ensembl)
 *******************
 
 
-`GitHub repository <https://github.com/FabianAndradeLozano/Genome-Browsers-Course>`_
+`GitHub repository <https://github.com/FabianAndradeLozano/Genome-Browser-Course>`_
 
 Contents:
 
