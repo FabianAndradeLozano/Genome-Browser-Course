@@ -7,14 +7,37 @@
 Types of Genome Browsers
 ================================
 
+As sequencing technologies improve and the number of sequenced genomes increases, a need for exploring, comparing, and examining this data emerges. 
+A solution to this need led to the development of genome browsers. A genome browser is a program that stores the sequence and annotations of a species, 
+allowing researchers from various fields to access, search, retrieve, and analyze this data in a graphical way. 
+
+A genome browser is an interactive tool that enables researchers to visualize and navigate genomic sequences and their annotations. 
+It provides a graphical interface to explore genes, regulatory elements, variations, and comparative genomics data within a genome. 
+By integrating diverse datasets, genome browsers allow users to:
+
+Genome browsers are divided into web-based browsers and standalone applications. In this course, we will focus on the first type.
 
 Web-based
 -----------
+Accesible online, regularly updated:
+
+	**UCSC Genome Browser**
+
+	**Ensembl**
+
+	**NCBI Genome Data Viewer**
 
 
 Software-based
 --------------
+Applications installed on local machines, recommended when working with large datasets or new genome assemblies. 
 
+	**Integrative Genomic Viewer (IGV)**
+
+	**Artemis**
+
+	**Genome Workbench**
+	
 
 Genome assembly codificiation
 =============================
