@@ -1,18 +1,25 @@
 .. _Introduction to genome browsers:
 
 *******************
-1 Library preparation
+1 Introduction to Genome Browsers
 *******************
 
-Main Causes of poor quality data
+Types of Genome Browsers
 ================================
 
-Template Preparation
---------------------
+
+Web-based
+-----------
 
 
-Library preparation 
-========================
+Software-based
+--------------
+
+
+Genome assembly codificiation
+=============================
+
+
 
 Selecting  a suitable NGS library according to the type of sample (cell type or tissue), and the downstream analysis (WES, WGS, ChipSeq, RNA-seq, ...) is essential to gurantee the quality of the data and get de desired information for our research. 
 In a nutshell, library is defined as a collection of nucleic acid (RNA or DNA) fragments of a defined lenght distribution with adapters attached. 
