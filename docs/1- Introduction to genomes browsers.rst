@@ -27,6 +27,20 @@ Accesible online, regularly updated:
 
 	**NCBI Genome Data Viewer**
 
+Also, Several genome browsers have been designed for specific organisms, providing specialized resources. Most of these correspond to model experimental species. 
+Some examples are:
+
+	- **FlyBase Genome Browser**: For *Drosophila melanogaster* (fruit fly).
+	- **WormBase Genome Browser**: For *Caenorhabditis elegans* (nematode worm).
+	- **TAIR Genome Browser**: For *Arabidopsis thaliana* (thale cress).
+	- **MaizeGDB Genome Browser**: For *Zea mays* (maize).
+	- **Gramene Genome Browser**: Focused on plant genomes like rice, wheat, and barley.
+	- **Saccharomyces Genome Database (SGD)**: For *Saccharomyces cerevisiae* (baker's yeast).
+	- **Rat Genome Database (RGD)**: For *Rattus norvegicus* (rat).
+	- **ZFIN Genome Browser**: For *Danio rerio* (zebrafish).
+	- **Mouse Genome Informatics (MGI) Browser**: For *Mus musculus* (mouse).
+	- **Echinobase**: For echinoderms like sea urchins.
+	- **Cattle Genome Database**: For *Bos taurus* (cattle).
 
 Software-based
 --------------
@@ -37,57 +51,40 @@ Applications installed on local machines, recommended when working with large da
 	**Artemis**
 
 	**Genome Workbench**
-	
 
-Genome assembly codificiation
+
+Genome assembly codification
 =============================
 
-
-
-Selecting  a suitable NGS library according to the type of sample (cell type or tissue), and the downstream analysis (WES, WGS, ChipSeq, RNA-seq, ...) is essential to gurantee the quality of the data and get de desired information for our research. 
-In a nutshell, library is defined as a collection of nucleic acid (RNA or DNA) fragments of a defined lenght distribution with adapters attached. 
-
-Main steps of a Library Preparation Kit:
-
-- **Fragmentation**
-
-Acid nucleic must be broken into smaller fragments. Generally physical and enzimatic fragmentation methods are popular for DNA, 
-whilst chemical fragmentation is more often applied to RNA fragmentation. 
-
-- **End-repair**
-
-With the use of enzymes (polymerases) are repaired  the 5' and 3' overhangs produced during the fragmentation, thus creating blunt ends.
-Additionally, the 5' ends are phosphorylated so they are compatible for the adapter ligation process. Some sequencing platforms (as Illumina) may also  require
-the addition of a single adenine base to create a 3' overhang before adapter ligation. 
-
-- **Adapter ligation**
-
-Short sequences of synthetic oligonucleotides (adapters) are attached to both ends of the DNA fragments.
-These short sequences interact with oligonucleotides on the sequencing instrument's flow cells to ensure that library is recognised and sequenced.
-Adapters may also contain a barcode (short index) for multiplexing capabilities, This means that the fragments of the sample are identified when sequencing a pool of samples in the same flow cell.
-
-- **Amplification**
-
-It is an optional step that enbales the sequencing library to be amplified via polymerase chain reaction (PCR), which allows lower samples inputs to be used for library preparation. 
-Can introduce **GC bias, duplicates or artifacts** that can hinder downstream analysis. In case a good quantity sample is preferable a PCR-free protocols to ensure high library complexity
-and more readily enable specific applications (like Whole Genome Sequencing and SNP detection). 
-
-- **Purification**
-
-removal of unwanted products to leave only the nucleic acid fragments. Often is perfomed size selection by agarose gel or magnetic bead purification. 
-
-- **Quality control**
-
-Check if DNA mets the quantity and quality requirements of the sequencing instrument. Assesss the quantity and size distribution of the library. 
-
+This difference in chromosome naming can affect how genomic coordinates are interpreted and may require conversion when switching between 
+resources or tools that use different conventions (as variant calling or variant annotation tools).
 
 .. note::
-	RNA library preparation is more complex due to the risk of degradation and requires additional steps respect DNA:
+	For chromosome naming:
 
-	- Due that RNA is converted to cDNA, PCR-amplified libraries are necessary for many sequencing instruments.
-	- Most of the RNA-seq applications requires the removal of the ribosomal RNA (rRNA), comprising up to 90% of the total RNA.
-	- For especific isolation of mRNA transcripts, in addition to rRNA depletion, poly(A) must be done for selecting the RNAs containing a polyadenilated tail using oligo primers.
+	- UCSC uses "chr" prefix (e.g., chr1, chr2, chrX)
+	- Ensembl uses numbers or letters without prefix (e.g., 1, 2, X)
 	
+	This difference in chromosome naming can affect how genomic coordinates are interpreted and may require conversion when switching between resources or tools that use different conventions.	
+
+UCSC Codification
+------------------
+
+Ensembl uses a naming convention that includes the species and the version of the genome. The current genome assembly is referred to as GRCh38.p14, while the previous genome is referred to as GRCh37. For the first name the codification is:
+
+- GRC stands for Genome Reference Consortium
+- h stands for human
+- 38 indicates the 38th version
+- p.14 denotes the 14th patch (small updates that do not affect the assembly coordinates but correct specific regions or add annotations). This feature provides a more detailed versioning system.
+
+Ensembl Codification
+------------------
+
+UCSC uses a simplified naming system. For the current human genome assembly, it refers to it as hg38 (Homo sapiens genome build 38), and for the previous version as hg19.
+
+This naming difference stems from the fact that Ensembl tends to mirror official genome releases like those from the GRC,
+while UCSC focuses on providing stable assembly versions. Patches or updates in UCSC are referred to as separate tracks.
+This means that users working with hg38 may not be automatically aware of any minor updates unless they manually explore the tracks.
 
 
 DNA library bias

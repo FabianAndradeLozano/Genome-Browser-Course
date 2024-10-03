@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Genome-Browser-Course'
+project = u'Genome Browser Course'
 
 # -- General configuration ---------------------------------------------------
 
