@@ -1,4 +1,4 @@
-.. _Library_preparation-page:
+.. _Introduction to genome browsers:
 
 *******************
 1 Library preparation
@@ -7,32 +7,8 @@
 Main Causes of poor quality data
 ================================
 
-Quality of the sequencing data starts before sequencing and library preparation. A proper Nucleic acid extractation is necessary to gurantee  a high quantity and purity. 
-Depending on the sample nature and the nucleic acid (RNA or DNA) the extraction proceess may vary, then an appropiate protocol to each situation must be chosen. 
-Thus, a rigorous quality control of the nucleic acid quantification extraction must to be performed, to asses the **quantity, purity and integrity**. 
-DNA Typically could be measured either UV spectrocopy (Nanodrop) or electrophoresis (Agilent TapeStation), RNA concentration is typically measured by Qubit fluorometer (ThermoFisherScientific).
-
-.. danger::
-	**RNA is more critical**, sample degradation and contamination is more frequent. 
-
 Template Preparation
 --------------------
-
-*Source: https://doi.org/10.1016/j.humimm.2021.02.012*
-
-.. tabs:: 
-
-	.. tab:: Amplicons 
-		
-		Thus, LR-PCR improved issues of sequence ambiguities seen with short amplicon sequencing It should be noted, however, that the LR-PCR-based approach, especially for HLA genotyping, is occasionally characterized by allele dropouts.
-
-	.. tab:: WES
-
-		Hibridization capture-based template is the most common. Biotinylated probes are hybridized with regions of interest, which are then isolated using streptavidin-coated magnetic beads.
-
-	.. tab:: Epigenome  Sequencing
-
-		Preparation of genomic samples for WGBS is commonly performed through the post-bisulfite treatment of DNA and de-tagging before index adaptor ligation for NGS sequencing . ChIP-Seq allows for genome-wide mapping of DNA-binding proteins and histone modifications at base-pair resolution. To prepare samples for ChIP-Seq, formaldehyde-fixed or natural chromatin is fragmented by micrococcal nuclease (MNase) or sonication, which is further immunoprecipitated with target-specific antibody conjugated to magnetic beads. Isolated DNA from the precipitated protein-DNA complexes is used to generate libraries
 
 
 Library preparation 
