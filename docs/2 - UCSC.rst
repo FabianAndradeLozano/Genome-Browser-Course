@@ -41,10 +41,32 @@ From top to bottom, the different parts of the genome browser are:
 	:alt: UCSC Homepage
 	:align: center
 
-
 4. Current location on the chromosome is indicated in red. Clicking other positions will redirect you there.
 5. Displayed annotation tracks
 5. All available tracks grouped in annotation blocks
+
+**Annotation Tracks (Appearance varies based on selected tracks)**
+
+Tracks are grouped into annotation blocks. Each block contains several tracks from different primary sources, related by the function they annotate (e.g., Assembly, Genes, Phenotypes, Variance).
+
+Each block of tracks can be hidden using the minus symbol on the left side.
+
+At the top of the annotation block, we find different buttons that apply to all tracks, such as track search to look for a specific track, hide all tracks, and more.
+
+.. image:: images/UCSC_tracks_blocks.png
+	:alt: UCSC Homepage
+	:align: center
+
+Tracks can be displayed in various ways, showing different levels of detail (hide, dense, squish, pack, full). The main tracks for each block are presented below.
+
+.. image:: images/UCSC_tracks_levels.png
+	:alt: UCSC Homepage
+	:align: center
+
+.. image:: images/UCSC_tracks_example.png
+	:alt: UCSC Homepage
+	:align: center
+
 
 BLAT (Blast - Like Aligment Tool)
 ================================
