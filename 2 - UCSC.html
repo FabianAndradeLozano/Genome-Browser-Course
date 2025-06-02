@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1 UCSC &mdash; Genome-Browser-Course  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://fabianandradelozano.github.io/Genome-Browser-Course/2%20-%20UCSC.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Genome-Browser-Course
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-%20Introduction%20to%20genomes%20browsers.html">1 Introduction to Genome Browsers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Genome-Browser-Course</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">1 UCSC</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/2 - UCSC.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ucsc">
+<span id="introduction-to-genome-browsers"></span><h1>1 UCSC<a class="headerlink" href="#ucsc" title="Link to this heading"></a></h1>
+<p>The UCSC Genome Browser is a web-based tool, developed by the University of California Santa Cruz in 2000.
+It was initially created to support the assembly and annotation of the human genome as part of the Human Genome Project.
+Since then, it has evolved into a comprehensive resource for genomic data analysis. The browser stores and displays genomic sequences and annotations for various species,
+enabling researchers to access, search, retrieve, and analyze genetic data in a graphical format. This browser focuses on providing genome assemblies for extensively studied species such as humans, mice,
+and zebrafish. It offers detailed information on genome annotations for a select group of organisms, and has become an essential tool for genomics research worldwide.</p>
+<section id="navigation-and-general-concepts">
+<h2>Navigation and general concepts<a class="headerlink" href="#navigation-and-general-concepts" title="Link to this heading"></a></h2>
+<p>Let’s navigate to <cite>UCSC &lt;https://genome-euro.ucsc.edu/index.html&gt;_</cite>.</p>
+<img alt="UCSC Homepage" class="align-center" src="_images/homepage_ucsc.png" />
+<p>In the Genomes tab, select your organism of interest. Next, choose the desired version from the Assembly dropdown menu. You can then search for a specific genomic region by entering a gene name,
+transcript, chromosome, or sequence.</p>
+<p>For this tutorial, we’ll focus on the Human Genome version <strong>GRCh38/hg38 and the gene name BRAF</strong>. After entering this information,
+you’ll be redirected to a new window displaying the sequence and annotations on a genomic map.</p>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_braf_tracks.png" />
+<p>From top to bottom, the different parts of the genome browser are:</p>
+<p><strong>Navigation and Search Position</strong></p>
+<ol class="arabic simple">
+<li><p>Genome species and version (Assembly)</p></li>
+<li><p>Base position scroll bar and zoom</p></li>
+<li><p>Coordinates box of the current position (chromosome number: start - end position). You can navigate to another region by entering new coordinates or a position query in the search box. You can also find matches by track name or descriptions.</p></li>
+</ol>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_search_box_queries.png" />
+<ol class="arabic simple" start="4">
+<li><p>Current location on the chromosome is indicated in red. Clicking other positions will redirect you there.</p></li>
+</ol>
+<p>5. Displayed annotation tracks
+5. All available tracks grouped in annotation blocks</p>
+<p><strong>Annotation Tracks (Appearance varies based on selected tracks)</strong></p>
+<p>Tracks are grouped into annotation blocks. Each block contains several tracks from different primary sources, related by the function they annotate (e.g., Assembly, Genes, Phenotypes, Variance).</p>
+<p>Each block of tracks can be hidden using the minus symbol on the left side.</p>
+<p>At the top of the annotation block, we find different buttons that apply to all tracks, such as track search to look for a specific track, hide all tracks, and more.</p>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_tracks_blocks.png" />
+<p>Tracks can be displayed in various ways, showing different levels of detail (hide, dense, squish, pack, full). The main tracks for each block are presented below.</p>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_tracks_levels.png" />
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_tracks_example.png" />
+<p>As commented, tracks are grouped in the following blocks (last update September 2024):</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Mapping and Sequencing: Contains tracks related to how genomic sequences were aligned, assembled, and their quality and consistency.</dt><dd><ol class="loweralpha simple">
+<li><p>Sequence</p></li>
+<li><p>GC content</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Genes and Gene Predictions: Tracks with information on known and predicted genes and alternative splicing isoforms.</dt><dd><ol class="loweralpha simple">
+<li><p>Gencode: Genes that are well-established based on experimental evidence</p></li>
+<li><p>RefSeq: Gene annotations provided by NCBI</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Phenotypes and Literature:</dt><dd><ol class="loweralpha simple">
+<li><p>OMIM (Online Mendelian Inheritance in Man): Annotations related to Mendelian disorders and their linked genes</p></li>
+<li><p>ClinVar: Clinically significant variants linked to health conditions</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Human Pangenome - HPRC: Genomic variation across diverse human populations, representing the full spectrum of human genetic diversity rather than a single reference</p></li>
+<li><dl class="simple">
+<dt>mRNA and EST (Expressed Sequence Tags): Focus on transcribed regions of the genome</dt><dd><ol class="loweralpha simple">
+<li><p>mRNA: Full-length mRNA transcripts that align to the genome</p></li>
+<li><p>EST: Partial transcripts that help identify actively transcribed parts of the genome and highlight alternative splicing</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Expression: Tracks showing where and to what extent genes are expressed in different tissues or cell types</p></li>
+<li><p>Single Cell RNA-seq: View of gene expression at the single-cell level, showing how individual cells within a tissue express different sets of genes</p></li>
+<li><p>Regulation: Information about regulatory elements, such as promoters, enhancers, and transcription factor binding sites</p></li>
+<li><p>Comparative Genomics: Comparison across genomes of other species</p></li>
+<li><p>Variation: Genetic variation and polymorphisms</p></li>
+<li><p>Repeats: Repetitive elements in the genome</p></li>
+</ol>
+<p>To learn more about a specific track, click on its name. This will open a new tab containing detailed information about the track,
+including its description, display methods, data sources, references, and configuration options (such as representation and color settings).</p>
+<p>In the following image we will find the settings for the RefSeq track:</p>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_refseq_track.png" />
+<p>Explore the different tracks and visualization you are interest in.
+Following we will explore the main Tools UCSC offer to search, extract and convert genomic data.</p>
+</section>
+<section id="blat-blast-like-aligment-tool">
+<h2>BLAT (Blast - Like Aligment Tool)<a class="headerlink" href="#blat-blast-like-aligment-tool" title="Link to this heading"></a></h2>
+<p>BLAT (BLAST-Like Alignment Tool) is a fast alignment tool used to find the genomic location of either a DNA or protein sequence.
+In this example, we will use a fragment of DNA sequence from the BRAF gene.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>cagcactttgggaggctgaggccgacagatcacgaggtcaggagattgag
+accatcctggctaacacagtgaaaccccacctctactaaaagtacaaaaa
+attagctgggcatggtggcaggcacctgtagtcccagctattcgggaggc
+tgaggcaggagaatggcgtgaaactgggaggtggagcttgcagtgagctg
+agatcgcaccactgcactccagcctgggtggcagtgcaagactctgtctc
+aaaaaagaaaagggggggaaaaacccaacttaatagatttgcaaaaaacc
+aaatagaaattccagaagtgaacactttaccaaatatacctaagagatta
+tgcctagctgaagaaagagttcattgcctgggagacaaggcagaagaaac
+tgtttagagtgtagcacagaataaaaaagaaaatattgaagagaggtaaa
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Access BLAT by clicking on the Tools section</p></li>
+<li><p>Enter your sequence in the BLAT search text box</p></li>
+<li><dl class="simple">
+<dt>Select the genome species and version (assembly) you want to align with, and the type of sequence—in this case, DNA</dt><dd><p>Submit your query</p>
+</dd>
+</dl>
+</li>
+</ol>
+<img alt="UCSC Homepage" class="align-center" src="_images/UCSC_blat_search.png" />
+<dl class="simple">
+<dt>As a result, we obtain a list of matches, ordered in descending order by identity percentage. We can see a link in the “Action” column that redirects the page to the genome browser position of the matched sequence.</dt><dd><p>Additionally, the sequence coordinates are displayed as chromosome, strand, sequence start, and end.</p>
+</dd>
+</dl>
+<ol class="arabic simple" start="4">
+<li><p>A list of results that align with our query sequence will then appear.</p></li>
+</ol>
+</section>
+<section id="table-browser">
+<h2>Table Browser<a class="headerlink" href="#table-browser" title="Link to this heading"></a></h2>
+<p>This powerful tool, accessible in the Tools tab, enables users to retrieve data from UCSC in tabular format. The Table Browser offers a flexible interface for querying and downloading specific genomic datasets.</p>
+<p>Key features of the Table Browser include:</p>
+<ul class="simple">
+<li><p>Customizable queries: Users can select specific genomic regions, genes, or entire chromosomes.</p></li>
+<li><p>Multiple output formats: Data can be exported in various formats such as BED, GTF, or custom formats.</p></li>
+<li><p>Filtering options: Apply filters to refine your search based on various criteria.</p></li>
+<li><p>Intersection and correlation: Compare data from different tracks or tables.</p></li>
+</ul>
+<p>In this example, we are going to retrieve all the exons of the BRAF gene from the Human genome assembly hg38. This demonstrates how the Table Browser can be used to extract specific genomic features for further analysis.</p>
+<p>As shown on the image:</p>
+<ul class="simple">
+<li><p>Fill the “Select datase” fields</p></li>
+<li><p>In Region select position and write down “BRAF”, then click on “Lookup”, and you will be redirect to another windows to select the gene name ,</p></li>
+</ul>
+<p>and after the text in the box will be replace for the gene coordinates.</p>
+</section>
+<section id="liftover">
+<h2>Liftover<a class="headerlink" href="#liftover" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

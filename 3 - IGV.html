@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1 IGV (Integrative Genomic Viewer) &mdash; Genome-Browser-Course  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://fabianandradelozano.github.io/Genome-Browser-Course/3%20-%20IGV.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Genome-Browser-Course
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-%20Introduction%20to%20genomes%20browsers.html">1 Introduction to Genome Browsers</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Genome-Browser-Course</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">1 IGV (Integrative Genomic Viewer)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/3 - IGV.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="igv-integrative-genomic-viewer">
+<span id="igv"></span><h1>1 IGV (Integrative Genomic Viewer)<a class="headerlink" href="#igv-integrative-genomic-viewer" title="Link to this heading"></a></h1>
+<p>IGV is a local Genome Browser software  that allows users to visualize large-scale genomic data. It is very useful for visualizing aligment data such as BAM files or VCF files, and validate genetic variants.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>IGV is available for Windows, MacOS, and Linux. You can download the latest version from the official IGV website: <a class="reference external" href="https://igv.org/doc/desktop/#DownloadPage/">IGV Downloads</a>.</p>
+</section>
+<section id="navigation-and-general-concepts">
+<h2>Navigation and general concepts<a class="headerlink" href="#navigation-and-general-concepts" title="Link to this heading"></a></h2>
+<p>Once installation is completed, to start analysisng your data IGV requires a reference genome.
+By default human genome GRCH38/HG38 is loaded, but you can select another version or speciee genome from the  genome dropdown menu.</p>
+<p>If your reference genome is not included, you can load  in FASTA or 2bit format  with the option “Load Genome from File” in the “Genomes” menu.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>FASTA files must be indexed with a .fai file using the <a class="reference external" href="https://www.htslib.org/doc/samtools-index.html">Samtools suite</a>.</p>
+</div>
+<p>Check this video for a quick introduction to IGV: <a class="reference external" href="https://www.youtube.com/watch?v=E_G8z_2gTYM">IGV Sequencing Data Basics</a>.</p>
+</section>
+<section id="loading-and-visualizing-data">
+<h2>Loading and visualizing data<a class="headerlink" href="#loading-and-visualizing-data" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
