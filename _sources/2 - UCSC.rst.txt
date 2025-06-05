@@ -1,7 +1,7 @@
-.. _Introduction to genome browsers:
+.. _UCSC:
 
 *******************
-1 UCSC
+2 UCSC
 *******************
 
 The UCSC Genome Browser is a web-based tool, developed by the University of California Santa Cruz in 2000. 

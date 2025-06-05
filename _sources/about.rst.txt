@@ -53,7 +53,7 @@ Program
 Outline
 ============
 
-This NGS Web-base Genome Browser course will train participants to understand the basics principles of a genome browser, and use UCSC and Esenmbl Genome Browsers. 
+This Genome Browser course will train participants to understand the basics principles of the main web browser as UCSC, Ensembl, and the local browser IGV.
 
 .. _home-page-learning:
 
@@ -67,6 +67,6 @@ Learning objectives
 Prerequisite / technical requirements
 ============
 
-
+* Basic knowledge of genomics data formats (FASTA, GTF, VCF, BAM), follow the course `Linux commands and Genomics Data formats for biologists <https://biocorecrg.github.io/PhD_course_genomics_format_2024/>`_.
 
 
