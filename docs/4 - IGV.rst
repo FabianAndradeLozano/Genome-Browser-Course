@@ -47,7 +47,7 @@ From top to down you will see the following tracks:
 1. Chromosome ideogram: a graphical representation of the chromosome structure and current position in red rectangle.
 2. Length in bp of the showed region and lines inidicating  the different positions in bp. 
 3. Coverage graph: a bar graph showing the number of reads that cover each position in the genome.
-4. Splice junctions: tracks that shows the breaks in read coverage due to splicing. 
+4. Splice junctions: tracks that shows the breaks in read coverage due to splicing. Blue for + strand and red for - strand. 
 5. Alignments: a graphical representation of the reads aligned to the reference genome. 
 6. Refseq: a track showing the reference sequence for the region of interest.
 

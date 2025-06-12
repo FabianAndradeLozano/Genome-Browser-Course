@@ -15,5 +15,6 @@ Contents:
    about
    1- Introduction to genomes browsers 
    2- UCSC
-   3- Ensembl 
+   3- ENSEMBL
+   4- IGV
   
