@@ -52,8 +52,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#genome-assembly-codification">Genome assembly codification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ensembl-codification">ENSEMBL Codification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ucsc-codification">UCSC Codification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ensembl-codification">Ensembl Codification</a></li>
 </ul>
 </li>
 </ul>
@@ -110,17 +110,17 @@ and conduct comparative analyses across species.</p>
 Some examples are:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>FlyBase Genome Browser</strong>: For <em>Drosophila melanogaster</em> (fruit fly).</p></li>
-<li><p><strong>WormBase Genome Browser</strong>: For <em>Caenorhabditis elegans</em> (nematode worm).</p></li>
-<li><p><strong>TAIR Genome Browser</strong>: For <em>Arabidopsis thaliana</em> (thale cress).</p></li>
-<li><p><strong>MaizeGDB Genome Browser</strong>: For <em>Zea mays</em> (maize).</p></li>
-<li><p><strong>Gramene Genome Browser</strong>: Focused on plant genomes like rice, wheat, and barley.</p></li>
-<li><p><strong>Saccharomyces Genome Database (SGD)</strong>: For <em>Saccharomyces cerevisiae</em> (baker’s yeast).</p></li>
-<li><p><strong>Rat Genome Database (RGD)</strong>: For <em>Rattus norvegicus</em> (rat).</p></li>
-<li><p><strong>ZFIN Genome Browser</strong>: For <em>Danio rerio</em> (zebrafish).</p></li>
-<li><p><strong>Mouse Genome Informatics (MGI) Browser</strong>: For <em>Mus musculus</em> (mouse).</p></li>
-<li><p><strong>Echinobase</strong>: For echinoderms like sea urchins.</p></li>
-<li><p><strong>Cattle Genome Database</strong>: For <em>Bos taurus</em> (cattle).</p></li>
+<li><p><a class="reference external" href="https://flybase.org/">**FlyBase**: For *Drosophila melanogaster* (fruit fly).</a></p></li>
+<li><p><a class="reference external" href="https://wormbase.org/#012-34-5">**WormBase**: For *Caenorhabditis elegans* (nematode worm).</a></p></li>
+<li><p><a class="reference external" href="https://www.arabidopsis.org/">**TAIR**: For *Arabidopsis thaliana* (thale cress).</a></p></li>
+<li><p><a class="reference external" href="https://www.maizegdb.org/">**MaizeGDB**: For *Zea mays* (maize).</a></p></li>
+<li><p><a class="reference external" href="https://www.gramene.org/">**Gramene**: Focused on plant genomes like rice, wheat, and barley.</a></p></li>
+<li><p><a class="reference external" href="https://www.yeastgenome.org/">**Saccharomyces Genome Database (SGD)**: For *Saccharomyces cerevisiae* (baker’s yeast).</a></p></li>
+<li><p><a class="reference external" href="https://rgd.mcw.edu/">**Rat Genome Database (RGD)**: For *Rattus norvegicus* (rat).</a></p></li>
+<li><p><a class="reference external" href="https://zfin.org/">**ZFIN**: For *Danio rerio* (zebrafish).</a></p></li>
+<li><p><a class="reference external" href="https://www.informatics.jax.org/">**Mouse Genome Informatics (MGI) Browser**: For *Mus musculus* (mouse).</a></p></li>
+<li><p><a class="reference external" href="https://echinobase.org/echinobase/">**Echinobase**: For echinoderms like sea urchins.</a></p></li>
+<li><p><a class="reference external" href="https://bovinegenome.elsiklab.missouri.edu/">**Cattle Genome Database**: For *Bos taurus* (cattle).</a></p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -128,37 +128,36 @@ Some examples are:</p>
 <h3>Software-based<a class="headerlink" href="#software-based" title="Link to this heading"></a></h3>
 <p>Applications installed on local machines, recommended when working with large datasets or new genome assemblies.</p>
 <blockquote>
-<div><p><strong>Integrative Genomic Viewer (IGV)</strong></p>
-<p><strong>Artemis</strong></p>
-<p><strong>Genome Workbench</strong></p>
+<div><p><a class="reference external" href="https://igv.org/doc/desktop/">**Integrative Genomic Viewer (IGV)**</a></p>
+<p><a class="reference external" href="https://sanger-pathogens.github.io/Artemis/Artemis/">**Artemis**</a></p>
 </div></blockquote>
 </section>
 </section>
 <section id="genome-assembly-codification">
 <h2>Genome assembly codification<a class="headerlink" href="#genome-assembly-codification" title="Link to this heading"></a></h2>
-<p>This difference in chromosome naming can affect how genomic coordinates are interpreted and may require conversion when switching between
-resources or tools that use different conventions (as variant calling or variant annotation tools).</p>
+<p>We can find different genomes assemblies codification names for the same specie and version depeding on their sourcer (UCSC, ENSEMBL or NCBI).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For chromosome naming:</p>
 <ul class="simple">
 <li><p>UCSC uses “chr” prefix (e.g., chr1, chr2, chrX)</p></li>
-<li><p>Ensembl uses numbers or letters without prefix (e.g., 1, 2, X)</p></li>
+<li><p>ENSEMBL/NCBI uses numbers or letters without prefix (e.g., 1, 2, X)</p></li>
 </ul>
-<p>This difference in chromosome naming can affect how genomic coordinates are interpreted and may require conversion when switching between resources or tools that use different conventions.</p>
+<p>When working with this genomes is important to be consistent when choosing the reference genome, annotation, aligning , etc.
+This difference in chromosome naming can affect how genomic coordinates are interpreted and may require conversion when switching between resources or tools that use different conventions.</p>
 </div>
-<section id="ucsc-codification">
-<h3>UCSC Codification<a class="headerlink" href="#ucsc-codification" title="Link to this heading"></a></h3>
+<section id="ensembl-codification">
+<h3>ENSEMBL Codification<a class="headerlink" href="#ensembl-codification" title="Link to this heading"></a></h3>
 <p>Ensembl uses a naming convention that includes the species and the version of the genome. The current genome assembly is referred to as GRCh38.p14, while the previous genome is referred to as GRCh37. For the first name the codification is:</p>
 <ul class="simple">
-<li><p>GRC stands for Genome Reference Consortium</p></li>
+<li><p>GRC stands for <a class="reference external" href="https://www.ncbi.nlm.nih.gov/grc">Genome Reference Consortium</a></p></li>
 <li><p>h stands for human</p></li>
 <li><p>38 indicates the 38th version</p></li>
 <li><p>p.14 denotes the 14th patch (small updates that do not affect the assembly coordinates but correct specific regions or add annotations). This feature provides a more detailed versioning system.</p></li>
 </ul>
 </section>
-<section id="ensembl-codification">
-<h3>Ensembl Codification<a class="headerlink" href="#ensembl-codification" title="Link to this heading"></a></h3>
+<section id="ucsc-codification">
+<h3>UCSC Codification<a class="headerlink" href="#ucsc-codification" title="Link to this heading"></a></h3>
 <p>UCSC uses a simplified naming system. For the current human genome assembly, it refers to it as hg38 (Homo sapiens genome build 38), and for the previous version as hg19.</p>
 <p>This naming difference stems from the fact that Ensembl tends to mirror official genome releases like those from the GRC,
 while UCSC focuses on providing stable assembly versions. Patches or updates in UCSC are referred to as separate tracks.

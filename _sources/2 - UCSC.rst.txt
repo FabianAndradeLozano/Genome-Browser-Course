@@ -13,7 +13,7 @@ and zebrafish. It offers detailed information on genome annotations for a select
 Navigation and general concepts
 ================================
 
-Let's navigate to `UCSC <https://genome-euro.ucsc.edu/index.html>_`.
+Let's navigate to `UCSC <https://genome-euro.ucsc.edu/index.html>`_.
 
 .. image:: images/homepage_ucsc.png
 	:alt: UCSC Homepage
@@ -41,11 +41,11 @@ From top to bottom, the different parts of the genome browser are:
 	:alt: UCSC Homepage
 	:align: center
 
-4. Current location on the chromosome is indicated in red. Clicking other positions will redirect you there.
+4. Current location on the chromosome is indicated in red. Clicking other positions will redirect you.
 5. Displayed annotation tracks
-5. All available tracks grouped in annotation blocks
+6. All available tracks grouped in annotation blocks
 
-**Annotation Tracks (Appearance varies based on selected tracks)**
+**Annotation Tracks**
 
 Tracks are grouped into annotation blocks. Each block contains several tracks from different primary sources, related by the function they annotate (e.g., Assembly, Genes, Phenotypes, Variance).
 
@@ -67,7 +67,7 @@ Tracks can be displayed in various ways, showing different levels of detail (hid
 	:alt: UCSC Homepage
 	:align: center
 
-As commented, tracks are grouped in the following blocks (last update September 2024):
+As commented, tracks are grouped in the following blocks (last update June 2025):
 
 1. Mapping and Sequencing: Contains tracks related to how genomic sequences were aligned, assembled, and their quality and consistency.
     a. Sequence
@@ -75,18 +75,18 @@ As commented, tracks are grouped in the following blocks (last update September 
 2. Genes and Gene Predictions: Tracks with information on known and predicted genes and alternative splicing isoforms.
     a. Gencode: Genes that are well-established based on experimental evidence
     b. RefSeq: Gene annotations provided by NCBI
-3. Phenotypes and Literature:
+3. Phenotypes, Variants and Literature:
     a. OMIM (Online Mendelian Inheritance in Man): Annotations related to Mendelian disorders and their linked genes
     b. ClinVar: Clinically significant variants linked to health conditions
-4. Human Pangenome - HPRC: Genomic variation across diverse human populations, representing the full spectrum of human genetic diversity rather than a single reference
-5. mRNA and EST (Expressed Sequence Tags): Focus on transcribed regions of the genome
+4. Variation: Genetic variation and polymorphisms
+5. Human Pangenome - HPRC: Genomic variation across diverse human populations, representing the full spectrum of human genetic diversity rather than a single reference
+6. mRNA and EST (Expressed Sequence Tags): Focus on transcribed regions of the genome
     a. mRNA: Full-length mRNA transcripts that align to the genome
     b. EST: Partial transcripts that help identify actively transcribed parts of the genome and highlight alternative splicing
-6. Expression: Tracks showing where and to what extent genes are expressed in different tissues or cell types
-7. Single Cell RNA-seq: View of gene expression at the single-cell level, showing how individual cells within a tissue express different sets of genes
-8. Regulation: Information about regulatory elements, such as promoters, enhancers, and transcription factor binding sites
-9. Comparative Genomics: Comparison across genomes of other species
-10. Variation: Genetic variation and polymorphisms
+7. Expression: Tracks showing where and to what extent genes are expressed in different tissues or cell types
+8. Single Cell RNA-seq: View of gene expression at the single-cell level, showing how individual cells within a tissue express different sets of genes
+9. Regulation: Information about regulatory elements, such as promoters, enhancers, and transcription factor binding sites
+10. Comparative Genomics: Comparison across genomes of other species
 11. Repeats: Repetitive elements in the genome
 
 To learn more about a specific track, click on its name. This will open a new tab containing detailed information about the track, 
@@ -98,7 +98,7 @@ In the following image we will find the settings for the RefSeq track:
 	:alt: UCSC Homepage
 	:align: center
 
-Explore the different tracks and visualization you are interest in.
+Explore the different tracks and visualization you are interested in.
 Following we will explore the main Tools UCSC offer to search, extract and convert genomic data. 
 
 BLAT (Blast - Like Aligment Tool)
@@ -121,22 +121,20 @@ In this example, we will use a fragment of DNA sequence from the BRAF gene.
 
 1. Access BLAT by clicking on the Tools section 
 2. Enter your sequence in the BLAT search text box
-3. Select the genome species and version (assembly) you want to align with, and the type of sequence—in this case, DNA
-    Submit your query
+3. Select the genome species and version (assembly) you want to align with, and the type of sequence, in this case DNA, and Submit your query
 
 .. image:: images/UCSC_blat_search.png
 	:alt: UCSC Homepage
 	:align: center
 
-As a result, we obtain a list of matches, ordered in descending order by identity percentage. We can see a link in the "Action" column that redirects the page to the genome browser position of the matched sequence. 
-	Additionally, the sequence coordinates are displayed as chromosome, strand, sequence start, and end.
+As a result, we obtain a list of matches, ordered in descending order by identity percentage. We can see a link in the "Action" column that redirects the page to the genome browser position of the matched sequence. Additionally, the sequence coordinates are displayed as chromosome, strand, sequence start, and end.
 
-4. A list of results that align with our query sequence will then appear. 
+4. A list of results that align with our query sequence will then appear.
 
 Table Browser
 ==============
 
-This powerful tool, accessible in the Tools tab, enables users to retrieve data from UCSC in tabular format. The Table Browser offers a flexible interface for querying and downloading specific genomic datasets.
+Accessible in the Tools tab, enables users to retrieve data from UCSC in tabular format. The Table Browser offers a flexible interface for querying and downloading specific genomic datasets.
 
 Key features of the Table Browser include:
 
@@ -149,12 +147,27 @@ In this example, we are going to retrieve all the exons of the BRAF gene from th
 
 As shown on the image:
 
-- Fill the “Select datase” fields
-- In Region select position and write down “BRAF”, then click on “Lookup”, and you will be redirect to another windows to select the gene name , 
+- Fill the “Select dataset” fields for the human genome assembly  hg38.
+- Select "Genes and Gene predictions" in the group field, "Gencode V48" in the track field, and "knownGene" in the table field.
+- In Region select position and write down “BRAF”, then click on “Lookup”, and you will be redirect to another windows to select the coordinates found for the BRAF gene., 
 and after the text in the box will be replace for the gene coordinates.
+-  Select "GTF - gene transfer format" in the output format field and write down a name for the output filename. 
+- Click on "get output" to download the file with the exons of the BRAF gene in GTF format. 
 
 Liftover
 ==========
 
+This tool converts genomic coordinates and annotations between different versions of a reference genome assembly. It is particularly useful when working with data from different sources or when updating analyses to newer genome versions.
+
+To use the Liftover tool:
+
+1. Access the Liftover tool from the Tools tab.
+2. Select your original genome specie and assembly, and the target genome assembly you want to convert to (new genome).
+3. Type your genomic coordinates in the text box or upload a file in BED format if a large number of coordinates need to be converted.
+4. Submit your request.
+
+The tool will return the lifted-over coordinates, allowing you to seamlessly transition between different genome versions.
 
 
+Custom tracks
+=================
