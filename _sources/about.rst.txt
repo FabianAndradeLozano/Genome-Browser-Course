@@ -8,20 +8,6 @@ About the course
    :toctree: generated
 
 
-
-
-.. |luca| image:: images/lcozzuto.jpg
-  :alt: Alternative text
-
-.. |toni| image:: images/thermoso.jpg
-  :alt: Alternative text
-  
-
-.. |julia| image:: images/jponomarenko.jpg
-  :alt: Alternative text
-
-
-
 .. list-table:: Main instructors:
    :widths: 50 50 50
    :header-rows: 1
